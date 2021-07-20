@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>is Your Birthday lucky?</title>
+</head>
+
+<body>
+    <section class="section ow container-center">
+        <form id="form">
+            <h1 class=" bold-text">Enter Your Birthdate and lucky number to continue...</h1>
+            <p class="section-text bold-text">Select your Birth date:</p>
+            <input class="inp" type="date" name="dob" id="dob" required>
+            <p class="section-text bold-text">Enter your Lucky Number:</p>
+            <input class="inp" type="number" name="num" id="num" required>
+            <button class="btn">Check</button>
+            <p id="res-label" class="section-text bold-text hidden"></p>
+            <img id="res-happy" class="res-img hidden" src="./images/happy.svg" alt="happy">
+            <img id="res-unhappy" class="res-img hidden" src="./images/unhappy.svg" alt="un-happy">
+        </form>
+
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
