@@ -4,6 +4,7 @@ const luckyNumber = document.getElementById("num");
 const resultText = document.getElementById("res-label");
 const happyImage = document.getElementById("res-happy");
 const unHappyImage = document.getElementById("res-unhappy");
+const removeWarning = document.getElementById("removeWarning");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -32,6 +33,10 @@ form.addEventListener("submit", (event) => {
       ? ""
       : happyImage.classList.add("hidden");
   }
+});
+
+removeWarning.addEventListener("click", () => {
+  document.getElementById("warning-div").classList.add("hidden");
 });
 
 //alternative
